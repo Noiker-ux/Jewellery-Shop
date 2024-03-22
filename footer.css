@@ -1,0 +1,61 @@
+* {
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+}
+
+/* Cinzel */
+
+footer {
+	background-color: #f3f1f1;
+
+	display: grid;
+}
+
+.footerLink:hover > li > a,
+.footerLink:not(:hover) > li > a,
+.footerLink:hover > li > a:hover > svg,
+.footerLink::not(:hover) > li > a:hover > svg {
+	transition: 0.5s;
+}
+
+.footerLink:hover:has(li > a:hover) {
+	color: rgb(157, 157, 157);
+}
+
+.footerLink:hover > li > a:hover {
+	color: black;
+}
+
+.footerLink:hover > li > a:hover > svg {
+	fill: rgb(157, 157, 157);
+}
+.footerLink:hover > li > a:not(:hover) > svg {
+	fill: black;
+}
+
+.btn {
+	transition: 0.5s ease;
+}
+
+.btn:hover::after {
+	height: 100%;
+	transition: 0.5s ease;
+}
+.btn::after {
+	position: absolute;
+	left: 0;
+	bottom: 0;
+	content: '';
+	width: 100%;
+	height: 0;
+	background-color: #ffffff;
+}
+
+.search:focus ~ .serchBlock {
+	transition: 0.5s ease;
+	right: 0;
+}
+.serchBlock {
+	box-shadow: -100vw 0px 0px 100vh rgba(34, 60, 80, 0.3);
+}

@@ -1,0 +1,392 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<link rel="preconnect" href="https://fonts.googleapis.com" />
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+		<link
+			href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400..900&display=swap"
+			rel="stylesheet" />
+		<link
+			href="https://fonts.googleapis.com/css2?family=Asap:ital,wght@0,100..900;1,100..900&display=swap"
+			rel="stylesheet" />
+		<script src="https://cdn.tailwindcss.com"></script>
+		<script>
+			tailwind.config = {
+				theme: {
+					fontFamily: {
+						luxery: ['Cinzel', 'serif'],
+						asap: ['Asap', 'sans-serif'],
+					},
+				},
+			};
+		</script>
+		<link rel="stylesheet" href="./footer.css" />
+		<title>Document</title>
+	</head>
+	<body>
+		<header
+			class="max-xl:grid-cols-2 grid grid-cols-3 py-5 px-10 border-b fixed w-full bg-white z-50 items-center">
+			<nav class="max-xl:hidden flex gap-x-6 font-[asap] text-sm">
+				<a href="">New In</a>
+				<a href="">Jewellery</a>
+				<a href="">Personalised</a>
+				<a href="">Gifts</a>
+				<a href="">About</a>
+			</nav>
+			<a class="max-sm:w-20 max-xl:ml-0 max-xl:pl-2 m-auto" href="#"
+				><img title="Logotip" src="./image/Logo.png"
+			/></a>
+			<div class="flex gap-x-6 justify-end items-center">
+				<button
+					class="max-xl:hidden search border px-4 rounded-full py-1 flex gap-x-6 items-center"
+					title="Search"
+					type="button">
+					<span>Search our store</span>
+					<img class="w-[16px]" src="./image/menu/search.png" title="search" />
+				</button>
+				<!-- -right-[1000px] -->
+				<div
+					class="max-xl:hidden serchBlock absolute bg-white border-l h-[100vh] top-0 w-6/12 z-20 -right-[6000px]">
+					<div class="flex items-center border-b gap-x-4 py-[25px] px-4">
+						<img
+							class="w-[20px] h-[20px]"
+							src="./image/menu/search.png"
+							alt="" />
+						<input
+							class="w-full outline-none"
+							type="text"
+							placeholder="Search our store" />
+						<div class="close relative cursor-pointer w-[20px] h-[20px]">
+							<div
+								class="absolute w-[20px] h-[1px] bg-black top-[9px] -rotate-45"></div>
+							<div
+								class="absolute w-[20px] h-[1px] bg-black bottom-[9px] rotate-45"></div>
+						</div>
+					</div>
+					<div class="links w-2/6 border-r bg-neutral-50 h-full py-5 px-4">
+						<h2 class="uppercase font-[luxery] leading-5 text-xl text-zinc-500">
+							HOW WE CAN HELP?
+						</h2>
+						<ul class="mt-6">
+							<li><a class="font-[asap] text-sm block" href="">Contact</a></li>
+							<li>
+								<a class="font-[asap] text-sm block mt-2" href="">FAQs</a>
+							</li>
+							<li>
+								<a class="font-[asap] text-sm block mt-2" href="">Our Stores</a>
+							</li>
+							<li>
+								<a class="font-[asap] text-sm block mt-2" href=""
+									>Terms & Conditions</a
+								>
+							</li>
+						</ul>
+					</div>
+				</div>
+
+				<div class="w-[20px] h-[20px] relative cursor-pointer z-10">
+					<div class="absolute top-[2px] w-full bg-black h-[1px]"></div>
+					<div class="absolute top-[9px] w-full bg-black h-[1px]"></div>
+					<div class="absolute bottom-[2px] w-full bg-black h-[1px]"></div>
+				</div>
+				<a href=""
+					><img class="w-5" title="Favorite" src="./image/menu/heart.png"
+				/></a>
+				<a href=""
+					><img class="w-5" title="Profile" src="./image/menu/avatar.png"
+				/></a>
+				<a href=""
+					><img
+						class="w-5"
+						title="Basket"
+						src="./image/menu/icons8-shopping-bag-48.png"
+				/></a>
+			</div>
+		</header>
+		<!-- фото текст видео -->
+		<section class="grid grid-cols-3 max-lg:grid-cols-1">
+			<div class="py-6 pl-12 max-lg:px-12">
+				<img
+					title="Jewellery"
+					src="./image/personalised.jpg"
+					width="100%"
+					class="static" />
+			</div>
+			<div class="flex flex-col justify-center items-center text-center gap-6">
+				<h2
+					class="uppercase font-[Jewellery] text-2xl text-zinc-700 tracking-wider px-2">
+					PERSONALISED JEWELLERY
+				</h2>
+				<span class="px-12 block"
+					>Add an extra special touch to your jewellery with our personalised
+					products, with a choice of hand stamping, handwriting and engraving
+					services.</span
+				>
+				#202020
+				<a
+					class="uppercase bg-black py-2 px-6 text-white cursor-pointer btn relative border-black border hover:decoration-gray-950"
+					>Shop now</a
+				>
+			</div>
+			<div class="py-6 pr-12 max-lg:px-12">
+				<video
+					src="./image/personalised.mp4"
+					poster="./image/personalised.jpg"
+					loop
+					width="100%"
+					autoplay="autoplay"
+					muted></video>
+			</div>
+		</section>
+		<!-- 4 колонки и форма -->
+		<section
+			class="flex flex-col items-center justify-center px-10 py-10 text-center">
+			<span class="uppercase text-sm font-normal text-zinc-500"
+				>DD NEWSLETTER</span
+			>
+			<h2
+				class="uppercase font-[Jewellery] text-2xl text-zinc-700 tracking-wider mt-4">
+				STAY IN THE LOOP WITH DANIELLA DRAPER
+			</h2>
+			<span class="font-[Jewellery] mt-4 text-m font-normal text-zinc-500"
+				>Sign up for all the latest news, products and adventures</span
+			>
+			<form class="mt-10 flex items-end max-sm:flex-col max-sm:items-stretch">
+				<input
+					type="email"
+					class="max-sm:min-w-max min-w-80 text-zinc-700 py-2 px-2 outline-none border-b border-zinc-300 bg-transparent hover:border-black transition ease font-[asap]"
+					title="email"
+					placeholder="Enter your email address"
+					required />
+				<button
+					title="sign in"
+					type="submit"
+					class="max-sm:mt-8 uppercase center font-[asap] font-light text-sm py-2 px-2 border-b border-black">
+					SIGN UP
+				</button>
+			</form>
+
+			<div
+				class="flex justify-evenly w-full items-center mt-14 flex-wrap gap-y-5">
+				<div
+					class="flex flex-col justify-center gap-y-4 items-center text-center px-10 w-60">
+					<img
+						class="w-16"
+						title="butterfly"
+						src="./image/credo/butterfly.png" />
+					<span class="font-[luxery] text-zinc-700 text-lg"
+						>HANDMADE IN THE UK</span
+					>
+				</div>
+				<div
+					class="flex flex-col justify-center gap-y-4 items-center text-center px-10 w-60">
+					<img class="w-16" title="medal" src="./image/credo/medal.png" />
+					<span class="font-[luxery] text-zinc-700 text-lg"
+						>100% RECYCLED METALS</span
+					>
+				</div>
+				<div
+					class="flex flex-col justify-center gap-y-4 items-center text-center px-10 w-60">
+					<img class="w-16" title="refresh" src="./image/credo/refresh.png" />
+					<span class="font-[luxery] text-zinc-700 text-lg"
+						>15,000 TREES PLANTED</span
+					>
+				</div>
+				<div
+					class="flex flex-col justify-center gap-y-4 items-center text-center px-10 w-60">
+					<img class="w-16" title="tree" src="./image/credo/tree.png" />
+					<span class="font-[luxery] text-zinc-700 text-lg"
+						>COMMITTED TO SUSTAINABILITY</span
+					>
+				</div>
+			</div>
+		</section>
+
+		<!-- s 
+		<section class="px-12 py-6 bg-gradient-to-r from-cyan-500 to-blue-500">
+			<img
+				class="w-full"
+				src="./image/say i do.jpg"
+				title="background"
+				draggable="false" />
+
+			<h2
+				class="font-[Jewellery] font-light text-white text-5xl tracking-wider mt-4 w-max">
+				SAY "I DO" WITH DD
+			</h2>
+			<span class="">Find your forever piece</span>
+
+			<a
+				href="#"
+				title="Shop wedding collection"
+				class="uppercase bg-black py-8"
+				>Shop wedding collection</a
+			>
+		</section>
+		-->
+		<!-- футер -->
+		<footer class="font-[luxery] py-10 px-6">
+			<div
+				class="grid grid-cols-2 gap-y-4 max-xl:grid-cols-1 max-sm:gap-8 max-xl:gap-14">
+				<div class="footerCol">
+					<div class="w-2/3 max-sm:w-full">
+						<p class="uppercase text-zinc-700 text-xl tracking-wider">
+							SUBSCRIBE TO LEARN MORE ABOUT OUR LATEST NEWS, PRODUCTS AND
+							ADVENTURES
+						</p>
+						<form
+							class="mt-10 flex items-end max-sm:flex-col max-sm:items-stretch">
+							<input
+								type="email"
+								class="max-sm:min-w-max min-w-80 text-zinc-700 py-2 px-2 outline-none border-b border-zinc-300 bg-transparent hover:border-black transition ease font-[asap]"
+								title="email"
+								placeholder="Enter your email address"
+								required />
+							<button
+								title="sign in"
+								type="submit"
+								class="max-sm:mt-8 uppercase center font-[asap] font-light text-sm py-2 px-2 border-b border-black">
+								SIGN UP
+							</button>
+						</form>
+					</div>
+				</div>
+				<div class="footerCol">
+					<div
+						class="grid grid-cols-3 gap-2.5 max-xl:mt-s12 max-sm:grid-cols-1 max-sm:mt-8 max-sm:gap-8">
+						<div
+							class="footerNavigation max-sm:flex max-sm:items-center max-sm:flex-col">
+							<span class="text-lg uppercase text-zinc-700 tracking-wider"
+								>DD WORLD</span
+							>
+							<ul
+								class="text-sm mt-5 font-[asap] font-normal grid gap-y-2 footerLink">
+								<li><a href="">Our Story</a></li>
+								<li><a href="">The Edit</a></li>
+								<li><a href="">The Journal</a></li>
+								<li><a href="">DD Rewards</a></li>
+								<li><a href="">Reviews</a></li>
+								<li><a href="">Events</a></li>
+							</ul>
+						</div>
+
+						<div
+							class="footerNavigation max-sm:flex max-sm:items-center max-sm:flex-col">
+							<span class="text-lg uppercase text-zinc-700 tracking-wider"
+								>HELP WITH</span
+							>
+							<ul
+								class="text-sm mt-5 font-[asap] font-normal grid grid-rows-2 gap-y-2 footerLink">
+								<li><a href="">Our Story</a></li>
+								<li><a href="">The Edit</a></li>
+								<li><a href="">The Journal</a></li>
+								<li><a href="">DD Rewards</a></li>
+								<li><a href="">Reviews</a></li>
+								<li><a href="">Events</a></li>
+							</ul>
+						</div>
+
+						<div
+							class="footerNavigation max-sm:flex max-sm:items-center max-sm:flex-col">
+							<span class="text-lg uppercase text-zinc-700 tracking-wider"
+								>CONTACT</span
+							>
+							<ul
+								class="text-sm mt-5 font-[asap] font-normal grid grid-rows-2 gap-y-2 footerLink">
+								<li><a href="tel:01472351341">01472 351 341</a></li>
+								<li><a href="">The Edit</a></li>
+								<li><a href="">The Journal</a></li>
+								<li><a href="">DD Rewards</a></li>
+								<li><a href="">Reviews</a></li>
+								<li><a href="">Events</a></li>
+							</ul>
+						</div>
+					</div>
+				</div>
+				<div class="footerCol self-center">
+					<ul class="flex gap-x-4 footerLink max-sm:justify-center">
+						<li>
+							<a title="facebook" href="#"
+								><svg
+									width="10"
+									height="18"
+									viewBox="0 0 10 18"
+									fill="000000"
+									xmlns="http://www.w3.org/2000/svg">
+									<path
+										d="M9.5 3H6.5C5.94772 3 5.5 3.44772 5.5 4V7H9.5C9.61374 6.99748 9.7216 7.05039 9.78923 7.14188C9.85685 7.23336 9.87578 7.35201 9.84 7.46L9.1 9.66C9.03181 9.86192 8.84312 9.99842 8.63 10H5.5V17.5C5.5 17.7761 5.27614 18 5 18H2.5C2.22386 18 2 17.7761 2 17.5V10H0.5C0.223858 10 0 9.77614 0 9.5V7.5C0 7.22386 0.223858 7 0.5 7H2V4C2 1.79086 3.79086 0 6 0H9.5C9.77614 0 10 0.223858 10 0.5V2.5C10 2.77614 9.77614 3 9.5 3Z" />
+								</svg>
+							</a>
+						</li>
+						<li>
+							<a title="instagramm" href="#"
+								><svg
+									width="18"
+									height="18"
+									viewBox="0 0 18 18"
+									fill="000000"
+									xmlns="http://www.w3.org/2000/svg">
+									<path
+										fill-rule="evenodd"
+										clip-rule="evenodd"
+										d="M13 0H5C2.23858 0 0 2.23858 0 5V13C0 15.7614 2.23858 18 5 18H13C15.7614 18 18 15.7614 18 13V5C18 2.23858 15.7614 0 13 0ZM16.25 13C16.2445 14.7926 14.7926 16.2445 13 16.25H5C3.20735 16.2445 1.75549 14.7926 1.75 13V5C1.75549 3.20735 3.20735 1.75549 5 1.75H13C14.7926 1.75549 16.2445 3.20735 16.25 5V13ZM13.75 5.25C14.3023 5.25 14.75 4.80228 14.75 4.25C14.75 3.69772 14.3023 3.25 13.75 3.25C13.1977 3.25 12.75 3.69772 12.75 4.25C12.75 4.80228 13.1977 5.25 13.75 5.25ZM9 4.50001C6.51472 4.50001 4.5 6.51473 4.5 9.00001C4.5 11.4853 6.51472 13.5 9 13.5C11.4853 13.5 13.5 11.4853 13.5 9.00001C13.5027 7.80572 13.0294 6.65958 12.1849 5.81509C11.3404 4.9706 10.1943 4.49735 9 4.50001ZM6.25 9C6.25 10.5188 7.48122 11.75 9 11.75C10.5188 11.75 11.75 10.5188 11.75 9C11.75 7.48122 10.5188 6.25 9 6.25C7.48122 6.25 6.25 7.48122 6.25 9Z" />
+								</svg>
+							</a>
+						</li>
+						<li>
+							<a title="twitter" href="#"
+								><svg
+									width="20"
+									height="17"
+									viewBox="0 0 20 17"
+									fill="000000"
+									xmlns="http://www.w3.org/2000/svg">
+									<path
+										d="M19.9708 2.46378C19.4547 3.15213 18.8309 3.75258 18.1235 4.24195C18.1235 4.42177 18.1235 4.60158 18.1235 4.79139C18.1292 8.0568 16.8249 11.1879 14.5029 13.4828C12.181 15.7777 9.03567 17.0443 5.77211 16.9988C3.88538 17.0051 2.02281 16.5743 0.330301 15.7401C0.239042 15.7003 0.18018 15.61 0.180527 15.5103V15.4005C0.180527 15.257 0.296758 15.1407 0.440136 15.1407C2.29475 15.0796 4.0832 14.4366 5.55244 13.3026C3.87376 13.2688 2.36338 12.2744 1.66829 10.7453C1.63318 10.6617 1.64411 10.5659 1.69713 10.4925C1.75016 10.419 1.83761 10.3785 1.9279 10.3856C2.43809 10.4369 2.95337 10.3894 3.44561 10.2458C1.59249 9.86109 0.200074 8.32265 0.000797149 6.43969C-0.00628542 6.34936 0.0341943 6.26187 0.107613 6.20882C0.181031 6.15577 0.276775 6.14483 0.360256 6.17996C0.857554 6.39939 1.39439 6.51496 1.93788 6.51961C0.314106 5.45384 -0.387258 3.42672 0.230452 1.58469C0.294214 1.4057 0.447402 1.27347 0.633723 1.2366C0.820043 1.19972 1.01201 1.26365 1.13908 1.40487C3.33027 3.73695 6.34099 5.12662 9.53645 5.28088C9.4546 4.95427 9.41434 4.61862 9.41663 4.28191C9.44652 2.51636 10.5389 0.943567 12.1825 0.299861C13.826 -0.343846 15.6953 0.0689272 16.9153 1.34494C17.747 1.18651 18.551 0.907164 19.3018 0.515789C19.3568 0.481454 19.4265 0.481454 19.4815 0.515789C19.5158 0.57081 19.5158 0.640583 19.4815 0.695604C19.1178 1.52835 18.5035 2.2268 17.7241 2.69355C18.4066 2.6144 19.0771 2.45341 19.7211 2.21404C19.7754 2.17713 19.8466 2.17713 19.9009 2.21404C19.9463 2.23482 19.9802 2.27457 19.9937 2.32269C20.0072 2.37081 19.9988 2.42242 19.9708 2.46378Z" />
+								</svg>
+							</a>
+						</li>
+						<li>
+							<a title="linkendin" href="#"
+								><svg
+									width="19"
+									height="18"
+									viewBox="0 0 19 18"
+									fill="000000"
+									xmlns="http://www.w3.org/2000/svg">
+									<path
+										fill-rule="evenodd"
+										clip-rule="evenodd"
+										d="M0 2.11765C0 0.948103 0.948103 0 2.11765 0C2.67928 0 3.21791 0.223109 3.61505 0.620245C4.01219 1.01738 4.23529 1.55601 4.23529 2.11765C4.23529 3.28719 3.28719 4.23529 2.11765 4.23529C0.948103 4.23529 0 3.28719 0 2.11765ZM18.5295 11.0223C18.566 8.72983 17.002 6.72095 14.7707 6.19406C13.2753 5.87207 11.7167 6.2943 10.5883 7.327V6.8823C10.5883 6.58991 10.3513 6.35288 10.0589 6.35288H7.41183C7.11945 6.35288 6.88242 6.58991 6.88242 6.8823V17.4705C6.88242 17.7629 7.11945 17.9999 7.41183 17.9999H10.0589C10.3513 17.9999 10.5883 17.7629 10.5883 17.4705V11.4988C10.5622 10.4354 11.3033 9.50677 12.346 9.29641C12.9668 9.18924 13.6031 9.36408 14.0821 9.77342C14.561 10.1828 14.8328 10.7841 14.8236 11.4141V17.4705C14.8236 17.7629 15.0606 17.9999 15.353 17.9999H18.0001C18.2925 17.9999 18.5295 17.7629 18.5295 17.4705V11.0223ZM4.23528 6.88229V17.4705C4.23528 17.7629 3.99825 17.9999 3.70587 17.9999H1.05881C0.76642 17.9999 0.529395 17.7629 0.529395 17.4705V6.88229C0.529395 6.58991 0.76642 6.35288 1.05881 6.35288H3.70587C3.99825 6.35288 4.23528 6.58991 4.23528 6.88229Z" />
+								</svg>
+							</a>
+						</li>
+					</ul>
+				</div>
+				<div class="footerCol">
+					<div class="flex justify-between items-center max-sm:flex-col">
+						<p class="font-[asap] text-zinc-700 text-xs">
+							© 2024 Daniella Draper Ltd.
+						</p>
+						<div class="flex gap-x-2">
+							<img
+								title="MasterCard"
+								class="w-10"
+								src="./image/bank/mastercard-full-svgrepo-com.svg" />
+							<img
+								title="PayPal"
+								class="w-10"
+								src="./image/bank/paypal-3-svgrepo-com.svg" />
+							<img
+								title="Visa"
+								class="w-10"
+								src="./image/bank/visa-svgrepo-com.svg" />
+						</div>
+					</div>
+				</div>
+			</div>
+		</footer>
+	</body>
+</html>
