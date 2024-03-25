@@ -1,9 +1,22 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
 * {
 	box-sizing: border-box;
 	margin: 0;
 	padding: 0;
 }
-
+.bgDD {
+	background-image: url('./image/say i do.jpg');
+	background-repeat: no-repeat;
+	background-position: center center;
+	background-attachment: fixed;
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	-o-background-size: cover;
+	background-size: cover;
+}
 /* Cinzel */
 
 footer {
